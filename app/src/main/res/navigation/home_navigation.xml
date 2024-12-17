@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dicoding.farmers.view.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myFarmFragment"
+            app:destination="@id/myFarmFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_animalsFragment"
+            app:destination="@id/animalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.dicoding.farmers.view.inventory.InventoryFragment"
+        android:label="fragment_inventory"
+        tools:layout="@layout/fragment_inventory" />
+    <fragment
+        android:id="@+id/myFarmFragment"
+        android:name="com.dicoding.farmers.view.myfarm.MyFarmFragment"
+        android:label="fragment_my_farm"
+        tools:layout="@layout/fragment_my_farm" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.dicoding.farmers.view.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.dicoding.farmers.view.balance.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.dicoding.farmers.view.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalsFragment"
+        android:name="com.dicoding.farmers.view.animals.AnimalsFragment"
+        android:label="fragment_animals"
+        tools:layout="@layout/fragment_animals" >
+        <action
+            android:id="@+id/action_animalsFragment_to_animalDetailFragment"
+            app:destination="@id/animalDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalDetailFragment"
+        android:name="com.dicoding.farmers.view.animals.AnimalDetailFragment"
+        android:label="fragment_animal_detail"
+        tools:layout="@layout/fragment_animal_detail" />
+
+</navigation>

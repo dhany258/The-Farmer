@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Farmers</string>
+    <string name="onboarding_welcome">Welcome to the World of Farmers</string>
+    <string name="the_farmer">The Farmer</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_dummy">Jakarta, Indonesia</string>
+    <string name="degrees">18°C</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="humidity">Humidity</string>
+    <string name="good">Good</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="low">Low</string>
+    <string name="manage_your_fields">Manage your fields</string>
+    <string name="my_farm">My Farm</string>
+    <string name="home">home</string>
+    <string name="inventory">Inventory</string>
+    <string name="account">Account</string>
+    <string name="name">Name</string>
+    <string name="weight">Weight</string>
+    <string name="age">Age</string>
+    <string name="description">Description</string>
+    <string name="name_hint">name</string>
+    <string name="weight_hint">weight</string>
+    <string name="due_date">due date</string>
+    <string name="age_hint">age</string>
+    <string name="submit">submit</string>
+    <string name="animals">Animals</string>
+    <string name="add">Add</string>
+    <string name="change_image">change image</string>
+    <string name="name_dummy">dexalius</string>
+    <string name="farm_address">Farm Address</string>
+    <string name="address_farmers">Jakarta, Indonesia</string>
+    <string name="edit_data">Edit Data</string>
+    <string name="balance">Balance</string>
+    <string name="explore_animals">Explore\nAnimals</string>
+    <string name="explore_different">Explore different types of animals!</string>
+    <string name="cattle">Cattle</string>
+    <string name="cattle_more">Learn about food, lifespan, and benefits</string>
+    <string name="goat">Goat</string>
+    <string name="chicken">Chicken</string>
+    <string name="input_your_farm">Input your farm details</string>
+    <string name="animal_name">Animal Name</string>
+    <string name="food">Food</string>
+    <string name="lifespan">Lifespan</string>
+    <string name="benefit">Benefit</string>
+    <string name="care_tips">Care Tips</string>
+    <string name="take_virtual_tour">Take Virtual Tour</string>
+
+    <string-array name="animal_names">
+        <item>Cattle - &lt;i&gt;Bos taurus&lt;/i&gt;</item>
+        <item>Goat - &lt;i&gt;Capra aegagrus hircus&lt;/i&gt;</item>
+        <item>Chicken - &lt;i&gt;Gallus gallus domesticus&lt;/i&gt;</item>
+    </string-array>
+
+    <!-- Array untuk deskripsi -->
+    <string-array name="animal_descriptions">
+        <item>
+            Cattle are large, domesticated herbivores commonly raised for milk production and beef.
+            They play a significant role in agriculture by providing essential products and services.
+        </item>
+        <item>
+            Goats are versatile livestock animals known for their adaptability.
+            They provide valuable products such as milk, meat, and fiber, making them a favorite in farming communities.
+        </item>
+        <item>
+            Chickens are widely domesticated poultry raised for their eggs and meat.
+            They are easy to care for and are an integral part of both small-scale and large-scale farming systems.
+        </item>
+    </string-array>
+
+    <!-- Array untuk makanan -->
+    <string-array name="animal_foods">
+        <item>
+            Fresh grass, hay, and silage are the primary food sources for cattle, providing essential nutrients for growth and milk production.
+        </item>
+        <item>
+            Goats primarily feed on grass, leaves, and shrubs. They are known for their ability to forage in difficult environments.
+        </item>
+        <item>
+            Chickens eat grains such as corn and wheat, as well as small insects, worms, and kitchen scraps for protein intake.
+        </item>
+    </string-array>
+
+    <!-- Array untuk umur -->
+    <string-array name="animal_lifespans">
+       <item>
+            Cattle generally have a lifespan of 15-20 years under proper care, though farm-raised cattle often live shorter lives.
+        </item>
+        <item>
+            Goats have an average lifespan of 10-12 years, depending on their breed, health, and the quality of care provided.
+        </item>
+        <item>
+            Chickens typically live for 5-7 years, although some backyard chickens can live up to 10 years with excellent care.
+        </item>
+    </string-array>
+
+    <!-- Array untuk manfaat -->
+    <string-array name="animal_benefits">
+        <item>
+            Cattle provide essential products such as milk, beef, leather, and even manure for fertilizer, which supports sustainable farming practices.
+        </item>
+        <item>
+            Goats are valued for their milk, meat, and hides. Goat milk is especially known for its nutritional benefits and easier digestibility.
+        </item>
+        <item>
+            Chickens contribute to food production through their eggs and meat. They also help control pests by eating insects in their environment.
+        </item>
+    </string-array>
+
+    <!-- Array untuk tips perawatan -->
+    <string-array name="animal_care_tips">
+        <item>
+            Ensure cattle have access to clean water, high-quality feed, and a well-ventilated shelter. Regular health checks are important to prevent diseases.
+        </item>
+        <item>
+            Provide goats with a clean and dry shelter, nutritious food, and space for grazing. Monitor their health regularly to prevent parasites and infections.
+        </item>
+        <item>
+            Maintain a clean and spacious coop for chickens, provide a balanced diet, and ensure they have protection from predators and harsh weather conditions.
+        </item>
+    </string-array>
+</resources>

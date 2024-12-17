@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.account.AccountFragment"
+    android:id="@+id/accountFragment">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="140dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/account"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_profile"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        android:src="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/change_image_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/change_image"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_profile"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/store_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/name"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/change_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/change_image_btn"
+        app:layout_constraintTop_toBottomOf="@+id/change_image_btn" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_store_desc_layout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/store_desc"
+        app:layout_constraintStart_toStartOf="@+id/store_desc"
+        app:layout_constraintTop_toBottomOf="@+id/store_desc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:gravity="top"
+            android:id="@+id/input_store_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/name_dummy"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/store_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/farm_address"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/input_store_desc_layout"
+        app:layout_constraintStart_toStartOf="@+id/input_store_desc_layout"
+        app:layout_constraintTop_toBottomOf="@+id/input_store_desc_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_store_address_layout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/input_store_desc_layout"
+        app:layout_constraintStart_toStartOf="@+id/input_store_desc_layout"
+        app:layout_constraintTop_toBottomOf="@+id/store_address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_store_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/address_farmers"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColorHint="@color/disable"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_edit_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_stroke"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/edit_data"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/input_store_address_layout"
+        app:layout_constraintStart_toStartOf="@+id/input_store_address_layout"
+        app:layout_constraintTop_toBottomOf="@+id/input_store_address_layout"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

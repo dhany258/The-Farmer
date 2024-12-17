@@ -108,7 +108,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/submit"
-        android:backgroundTint="@color/green"
+        android:background="@drawable/button_rounded"
         android:layout_marginTop="32dp"/>
 
 

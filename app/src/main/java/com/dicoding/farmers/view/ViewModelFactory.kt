@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.farmers.data.FarmRepository
 import com.dicoding.farmers.view.add.AddFarmViewModel
+import com.dicoding.farmers.view.add.AddInventoryViewModel
 import com.dicoding.farmers.view.inventory.InventoryViewModel
 import com.dicoding.farmers.view.myfarm.MyFarmViewModel
 
@@ -34,6 +35,9 @@ class ViewModelFactory private constructor(private val farmRepository: FarmRepos
             }
             modelClass.isAssignableFrom(MyFarmViewModel::class.java) -> {
                 MyFarmViewModel(farmRepository) as T
+            }
+            modelClass.isAssignableFrom(AddInventoryViewModel::class.java) -> {
+                AddInventoryViewModel(farmRepository) as T
             }
             else -> throw Throwable("Unknown ViewModel class: " + modelClass.name)
         }

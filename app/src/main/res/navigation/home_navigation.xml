@@ -33,7 +33,11 @@
         android:id="@+id/inventoryFragment"
         android:name="com.dicoding.farmers.view.inventory.InventoryFragment"
         android:label="fragment_inventory"
-        tools:layout="@layout/fragment_inventory" />
+        tools:layout="@layout/fragment_inventory" >
+        <action
+            android:id="@+id/action_inventoryFragment_to_addInventoryFragment"
+            app:destination="@id/addInventoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/myFarmFragment"
         android:name="com.dicoding.farmers.view.myfarm.MyFarmFragment"
@@ -72,5 +76,14 @@
         android:name="com.dicoding.farmers.view.animals.AnimalDetailFragment"
         android:label="fragment_animal_detail"
         tools:layout="@layout/fragment_animal_detail" />
+    <fragment
+        android:id="@+id/addInventoryFragment"
+        android:name="com.dicoding.farmers.view.add.AddInventoryFragment"
+        android:label="fragment_add_inventory"
+        tools:layout="@layout/fragment_add_inventory" >
+        <action
+            android:id="@+id/action_addInventoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
 </navigation>

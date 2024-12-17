@@ -16,7 +16,7 @@ import com.google.android.material.snackbar.Snackbar
 class AddFragment : Fragment(){
     private var _binding:FragmentAddBinding? = null
     private val binding get() = _binding!!
-    private lateinit var addInventoryViewModel: AddFarmViewModel
+    private lateinit var addFarmViewModel: AddFarmViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -28,13 +28,13 @@ class AddFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val factory = ViewModelFactory.getInstance(requireContext())
-        addInventoryViewModel = ViewModelProvider(this, factory)[AddFarmViewModel::class.java]
+        addFarmViewModel = ViewModelProvider(this, factory)[AddFarmViewModel::class.java]
         binding.icDateButton.setOnClickListener {
             val datePickerFragment = DatePickerFragment()
             datePickerFragment.show(parentFragmentManager, "datePicker")
         }
         binding.submitBtn.setOnClickListener{
-            addInventory()
+            addFarm()
         }
         parentFragmentManager.setFragmentResultListener(
             "DATE_PICKER_RESULT",
@@ -47,7 +47,7 @@ class AddFragment : Fragment(){
 
 
 
-    private fun addInventory(){
+    private fun addFarm(){
         val name = binding.addEdName.text.toString().trim()
         val weight = binding.addEdWeight.text.toString().trim()
         val age = binding.addEdAge.text.toString().trim()
@@ -60,14 +60,14 @@ class AddFragment : Fragment(){
             return
         }
 
-        addInventoryViewModel.insertInventory(
+        addFarmViewModel.insertFarm(
             name = name,
             weight = weightValue,
             age = ageValue,
             description = description
         )
 
-        Snackbar.make(binding.root,"Inventory added successfully", Snackbar.LENGTH_SHORT).show()
+        Snackbar.make(binding.root,"Farm added successfully", Snackbar.LENGTH_SHORT).show()
         findNavController().navigate(R.id.action_addFragment_to_homeFragment)
     }
 

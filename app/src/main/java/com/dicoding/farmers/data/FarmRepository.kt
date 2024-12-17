@@ -40,9 +40,6 @@ class FarmRepository(private val farmDao: FarmDao) {
         return farmDao.getDataById(farmId)
     }
 
-//    fun getFarmsWithUpcomingDueDate(currentDate: Long): LiveData<List<Farm>> {
-//        return farmDao.getFarmsWithDueDate(currentDate)
-//    }
 
     suspend fun insertFarm(farm: Farm): Long {
         return farmDao.insertData(farm)
@@ -50,6 +47,14 @@ class FarmRepository(private val farmDao: FarmDao) {
 
     suspend fun deleteFarm(farm: Farm) {
         farmDao.deleteData(farm)
+    }
+
+    suspend fun insertInventory(inventory: Inventory): Long {
+        return farmDao.insertInventory(inventory)
+    }
+
+    fun getAllInventory(): LiveData<List<Inventory>> {
+        return farmDao.getInventory()
     }
 
 }

@@ -20,7 +20,7 @@ class FarmAdapter: PagingDataAdapter<Farm, FarmAdapter.FarmViewHolder>(DIFF_CALL
         }
     }
 
-    override fun onBindViewHolder(holder: FarmAdapter.FarmViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: FarmViewHolder, position: Int) {
         val farm = getItem(position)
         if (farm != null) {
             holder.bind(farm)
@@ -33,7 +33,7 @@ class FarmAdapter: PagingDataAdapter<Farm, FarmAdapter.FarmViewHolder>(DIFF_CALL
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FarmAdapter.FarmViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FarmViewHolder {
         val binding = ItemFamerBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return FarmViewHolder(binding)
     }

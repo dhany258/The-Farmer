@@ -30,4 +30,10 @@ interface FarmDao {
 
     @Delete
     suspend fun deleteData(farm: Farm)
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insertInventory(inventory: Inventory): Long
+
+    @Query("SELECT * FROM inventory")
+    fun getInventory(): LiveData<List<Inventory>>
 }

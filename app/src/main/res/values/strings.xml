@@ -47,6 +47,8 @@
     <string name="benefit">Benefit</string>
     <string name="care_tips">Care Tips</string>
     <string name="take_virtual_tour">Take Virtual Tour</string>
+    <string name="quantity">Quantity</string>
+    <string name="input_your_inventory">Input your inventory</string>
 
     <string-array name="animal_names">
         <item>Cattle - &lt;i&gt;Bos taurus&lt;/i&gt;</item>

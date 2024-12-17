@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:text="@string/next"
-            android:backgroundTint="@color/green"
+            android:background="@drawable/button_rounded"
             android:layout_marginHorizontal="32dp"/>
     </LinearLayout>
 
